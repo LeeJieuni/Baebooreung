@@ -1,12 +1,10 @@
 package com.pro.baebooreung.userservice.controller;
 
 import com.pro.baebooreung.userservice.domain.UserEntity;
-import com.pro.baebooreung.userservice.dto.UserDto;
+import com.pro.baebooreung.userservice.dto.*;
 import com.pro.baebooreung.userservice.service.UserService;
-import com.pro.baebooreung.userservice.vo.Greeting;
-import com.pro.baebooreung.userservice.vo.RequestNaverMap;
-import com.pro.baebooreung.userservice.vo.RequestUser;
-import com.pro.baebooreung.userservice.vo.ResponseUser;
+import com.pro.baebooreung.userservice.vo.*;
+import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,14 +17,14 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 @RestController
 @RequestMapping("/")
-//@CrossOrigin(originPatterns = "https://localhost:3000, http://localhost:3000, https://k7c207.p.ssafy.io, http://k7c207.p.ssafy.io")
+@Slf4j
+//@CrossOrigin(originPatterns = "https://localhost:3000, http://localhost:3000, https://k7c207.p.ssafy.io, http://k7c207.p.ssafy.io, https://k7c207.p.ssafy.io:8000, http://k7c207.p.ssafy.io:8000",maxAge=3600)
 public class UserController {
 
     @Autowired
@@ -45,10 +43,11 @@ public class UserController {
     @Autowired
     RestTemplate restTemplate;
 
-    @GetMapping("/map")
+
+    @PostMapping("/map")
     public ResponseEntity<Object> getData(@RequestBody RequestNaverMap request) {
         String url =
-                "https://naveropenapi.apigw.ntruss.com/map-direction-15/v1/driving?start="+request.getStart()
+                "https://naveropenapi.apigw.ntruss.com/map-direction/v1/driving?start="+request.getStart()
                         +"&goal="+request.getGoal()
                         +"&option="+request.getOption()
                         +"&waypoints="+request.getWaypoints();
@@ -60,8 +59,8 @@ public class UserController {
             RestTemplate restTemplate = new RestTemplate();
 
             HttpHeaders header = new HttpHeaders();
-            header.add("X-NCP-APIGW-API-KEY-ID","i3oq00t777");
-            header.add("X-NCP-APIGW-API-KEY","SKQeRSOuZty3XKmuYfGHjQ2GNGUUS6c3wGhroXsG");
+            header.add("X-NCP-APIGW-API-KEY-ID","2677291f55");
+            header.add("X-NCP-APIGW-API-KEY","RX10Y0FIdxjIGfqAQYdT22gTbCg8694MQ0eHPZTG");
             HttpEntity<?> entity = new HttpEntity<>(header);
 
             UriComponents uri = UriComponentsBuilder.fromHttpUrl(url).build();
@@ -97,6 +96,7 @@ public class UserController {
     @GetMapping("/welcome")
     public String welcome(){
 //        return env.getProperty("greeting.message");
+        System.out.println("????????????????????????????????");
         return greeting.getMessage();
     }
 
@@ -141,16 +141,83 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.OK).body(result);
     }
 
+    @GetMapping("/fcm/user/{id}") //회원이 다음에 향할 지점인 deliveryId 가져오기
+    public int getUserDeliveryId(@PathVariable int id) {
+        int result = userService.getUserDeliveryId(id);
+        return result;
+    }
+
 //    @GetMapping("/api/logout")
 //    public ResponseEntity<?> logout(@RequestHeader(value="token") String token) {
 //        //근데 그냥 토큰이 로그인 할 떄마다 발급되는데 내가 없애줄 게 있나? 강제로 만료하게 하는 것도 불가능 하잖아
 //    }
 
     @PutMapping("/authdriver/{id}") //관리자가 가입한 사람 드라이버라고 인증해주기
-    public ResponseEntity<ResponseUser> authDriver(@PathVariable int id) {
+    public ResponseEntity<ResponseUser> authDriver(@PathVariable("id") int id) {
         ResponseUser user = userService.setUsertoDriver(id);
 
         return ResponseEntity.status(HttpStatus.OK).body(user);
+    }
+
+    @PutMapping("/start")
+    public ResponseEntity<ResponseUser> startWork(@RequestBody RequestStart start){//@PathVariable("id") int id){
+        ModelMapper mapper = new ModelMapper();
+        mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
+        StartDto startDto = mapper.map(start, StartDto.class);
+
+        UserDto response = userService.setStart(startDto);
+        //반환값 설정정
+        ResponseUser responseUser = mapper.map(response, ResponseUser.class);
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(responseUser);
+    }
+
+    @PutMapping("/checkIn")
+    public ResponseEntity<String> checkIn(@RequestBody RequestCheckIn requestCheckIn){
+        log.info("checkIn request data = {}", requestCheckIn.toString());
+        ModelMapper mapper = new ModelMapper();
+        mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
+
+        CheckinDto checkinDto = mapper.map(requestCheckIn, CheckinDto.class);
+
+        userService.setCheckIn(checkinDto);
+
+        return ResponseEntity.status(HttpStatus.CREATED).body("체크인 성공");
+    }
+
+    @PutMapping("/end/{userId}")
+    public ResponseEntity<String> endWork(@PathVariable("userId") int userId){
+        userService.setEnd(userId);
+
+        return ResponseEntity.status(HttpStatus.CREATED).body("업무 종료 성공");
+    }
+
+    @GetMapping("/route/delivery/{userId}")
+    public ResponseDriverRoute checkRouteAndDelivery(@PathVariable("userId") int userId){
+        return userService.getDriverRoute(userId);
+    }
+
+
+
+    @PostMapping("/user/save/profile")
+    public void saveProfile(@RequestBody ProfileResponse res){
+        userService.saveProfile(res);
+    }
+
+    @GetMapping("/user/profile/{userId}")
+    public String getProfile(@PathVariable("userId") int userId){
+
+        return userService.getProfile(userId);
+    }
+
+    @GetMapping("/fcm/specialkey/{userId}")
+    public String getSpecialkey(@PathVariable("userId") int userId){
+        String specialkey = userService.getSpecialKey(userId);
+        if(!specialkey.isEmpty()){
+            return specialkey;
+        }else{
+            return "There's no special key";
+        }
     }
 }
 

@@ -34,13 +34,16 @@ public class Order {
     @Column(name="address", nullable = false)
     private String address;
 
-    @Column(name="delivery_time", nullable = false)
-    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm")
-    private LocalDateTime deliveryTime;
+    @Column(name="drop_id", nullable = false)
+    private int dropId;
 
-    @Column(name="pickup_time", nullable = false)
-    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm")
-    private LocalDateTime pickupTime;
+//    @Column(name="delivery_time", nullable = false)
+//    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm")
+//    private LocalDateTime deliveryTime;
+//
+//    @Column(name="pickup_time", nullable = false)
+//    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm")
+//    private LocalDateTime pickupTime;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(referencedColumnName = "id",name = "deliveryId")
@@ -51,14 +54,15 @@ public class Order {
     private List<OrderMenu> orderMenuList = new ArrayList<>();
 
     @Builder
-    public Order(String customerId, String customerName, String customerPhone, Restaurant restaurant, String address, LocalDateTime deliveryTime, LocalDateTime pickupTime, Delivery delivery) {
+    public Order(String customerId, String customerName, String customerPhone, Restaurant restaurant, String address, Delivery delivery, int dropId) { //, LocalDateTime deliveryTime, LocalDateTime pickupTime
         this.customerId = customerId;
         this.customerName = customerName;
         this.customerPhone = customerPhone;
         this.restaurant = restaurant;
         this.address = address;
-        this.deliveryTime = deliveryTime;
-        this.pickupTime = pickupTime;
+//        this.deliveryTime = deliveryTime;
+//        this.pickupTime = pickupTime;
         this.delivery = delivery;
+        this.dropId = dropId;
     }
 }
