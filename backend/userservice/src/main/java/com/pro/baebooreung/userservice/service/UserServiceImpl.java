@@ -3,40 +3,38 @@ package com.pro.baebooreung.userservice.service;
 import com.pro.baebooreung.userservice.client.BusinessServiceClient;
 import com.pro.baebooreung.userservice.domain.Grade;
 import com.pro.baebooreung.userservice.domain.UserEntity;
+import com.pro.baebooreung.userservice.domain.WorkStatus;
 import com.pro.baebooreung.userservice.domain.repository.UserRepository;
-import com.pro.baebooreung.userservice.dto.UserDto;
+import com.pro.baebooreung.userservice.dto.*;
 import com.pro.baebooreung.userservice.vo.ResponseRoute;
 import com.pro.baebooreung.userservice.vo.ResponseUser;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.ExpiredJwtException;
-import io.jsonwebtoken.Jws;
-import io.jsonwebtoken.Jwts;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
-import org.modelmapper.spi.MatchingStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.circuitbreaker.CircuitBreakerFactory;
 import org.springframework.core.env.Environment;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
+
 @Service
+@Slf4j
+@RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
 
     UserRepository userRepository; //필드단위에서 @Autowired사용할 수 있지만 생성자 통해서 주입하는 것이 더 좋음
     BCryptPasswordEncoder passwordEncoder;
 
     Environment env;
-//    RestTemplate restTemplate;
     BusinessServiceClient businessServiceClient;
 //    CircuitBreakerFactory circuitBreakerFactory;
 
@@ -44,14 +42,12 @@ public class UserServiceImpl implements UserService {
     public UserServiceImpl(UserRepository userRepository,
                            BCryptPasswordEncoder passwordEncoder,
                            Environment env,
-//                           RestTemplate restTemplate,
                               BusinessServiceClient businessServiceClient
 //                           CircuitBreakerFactory circuitBreakerFactory
     ) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.env = env;
-//        this.restTemplate = restTemplate;
         this.businessServiceClient=businessServiceClient;
 //        this.circuitBreakerFactory = circuitBreakerFactory;
     }
@@ -70,6 +66,13 @@ public class UserServiceImpl implements UserService {
         response.setRouteList(routeList);
 
         return response;
+    }
+
+    public int getUserDeliveryId(int id){
+        UserEntity userEntity = userRepository.findById(id);
+        if (userEntity == null) throw new UsernameNotFoundException(id + ": not found");
+        if (userEntity.getDeliveryId() == null) throw new NullPointerException("DeliveryId is not found");
+        return userEntity.getDeliveryId();
     }
 
 
@@ -94,17 +97,33 @@ public class UserServiceImpl implements UserService {
 
         //길게 set하지 않고 간편하게 쓰는 법
         ModelMapper mapper = new ModelMapper();
-        //매칭 전략을 딱 맞아 떨어지는 것만 되게끔 강력하게 설정
         mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
-        //전달받은 userDto 값을 UserEntity로 변환
-        UserEntity userEntity = mapper.map(userDto, UserEntity.class);
-        if(userEntity.getGrade()==Grade.DRIVER) userEntity.setGrade(Grade.UNAUTHORIZED); // 드라이버로 가입한 사람은 임시권한
-        userEntity.setEncryptedPwd(passwordEncoder.encode(userDto.getPassword())); // 비밀번호 암호화
+        log.info("userDto:"+userDto.toString());
+        UserEntity userEntity = UserEntity.builder()
+                .email(userDto.getEmail())
+                .name(userDto.getName())
+                .encryptedPwd(passwordEncoder.encode(userDto.getPassword()))
+                .specialKey(userDto.getSpecialKey())
+                .phone(userDto.getPhone())
+                .region(userDto.getRegion())
+                .grade(userDto.getGrade().equals("DRIVER")?Grade.UNAUTHORIZED:Grade.MANAGER)
+                .build();
+
+
+//        UserEntity userEntity = mapper.map(userDto, UserEntity.class);
+        log.info("userEntity: "+userEntity.toString());
+
+//        if(userDto.getGrade().equals(Grade.DRIVER)) {
+//            userEntity.builder().grade(Grade.UNAUTHORIZED).build();// 드라이버로 가입한 사람은 임시권한
+//        }else userEntity.builder().grade(Grade.MANAGER).build();
+
+//        userEntity.builder().encryptedPwd(passwordEncoder.encode(userDto.getPassword())).build(); // 비밀번호 암호화
 
         userRepository.save(userEntity);
-
+        log.info("userEntity2: "+userEntity.toString());
         //반환해서 확인하기 위함
         UserDto returnUserDto = mapper.map(userEntity, UserDto.class);
+        log.info("userDto2:"+returnUserDto.toString());
         return returnUserDto;
     }
 
@@ -129,13 +148,81 @@ public class UserServiceImpl implements UserService {
 
     public ResponseUser setUsertoDriver(int id){
         UserEntity findUser = userRepository.findById(id);
-        findUser.setGrade(Grade.DRIVER);
+        findUser.updateGrade(Grade.DRIVER);
         userRepository.save(findUser);
-
         ModelMapper mapper = new ModelMapper();
         mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
         ResponseUser responseUser = mapper.map(findUser, ResponseUser.class);
         return responseUser;
+    }
+
+    @Transactional
+    public UserDto setStart(StartDto startDto){
+        UserEntity findUser = userRepository.findById(startDto.getId());
+        findUser.updateStartEnd(startDto.getRouteId(), startDto.getDeliveryId(),WorkStatus.DRIVING);
+
+        userRepository.save(findUser);
+
+        ModelMapper mapper = new ModelMapper();
+        mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
+        UserDto responseUser = mapper.map(findUser, UserDto.class);
+
+//        /* feign client */
+//        List<ResponseRoute> routeList = new ArrayList<>();
+//        routeList.add(businessServiceClient.getRoute(startDto.getRouteId()));
+//        responseUser.setRouteList(routeList);
+
+        return responseUser;
+    }
+
+    @Override
+    public void setCheckIn(CheckinDto checkinDto){
+        UserEntity findUser = userRepository.findById(checkinDto.getId());
+        findUser.updateDelivery(checkinDto.getDeliveryId());
+
+        userRepository.save(findUser);
+    }
+
+    @Override
+    public void setEnd(int id) {
+        UserEntity findUser = userRepository.findById(id);
+        findUser.updateStartEnd(0,0,WorkStatus.OFF);
+        userRepository.save(findUser);
+    }
+
+    @Override
+    public void saveProfile(ProfileResponse res) {
+        UserEntity findUser = userRepository.findById(res.getUserId());
+        findUser.updateProfile(res.getProfileUrl());
+        userRepository.save(findUser);
+    }
+
+    @Override
+    public String getProfile(int userId) {
+        UserEntity findUser = userRepository.findById(userId);
+        return findUser.getProfile();
+    }
+
+
+
+    @Override
+    public ResponseDriverRoute getDriverRoute(int id) {
+        UserEntity findUser  = userRepository.findById(id);
+        boolean isDriver = findUser.getWorkStatus().equals(WorkStatus.DRIVING)?true:false;
+        if(isDriver){
+            return ResponseDriverRoute.builder().route_id(findUser.getRouteId()).delivery_id(findUser.getDeliveryId()).drive(isDriver).build();
+        } else {
+            return ResponseDriverRoute.builder().route_id(0).delivery_id(0).drive(false).build();
+        }
+    }
+
+    public String getSpecialKey(int id){
+        UserEntity findUser  = userRepository.findById(id);
+        if(!findUser.getSpecialKey().isEmpty()){
+            return findUser.getSpecialKey();
+        }else{
+            throw new NullPointerException("id: "+id+"의 special key 값이 비어있습니다.");
+        }
     }
 }
 

@@ -5,60 +5,565 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e588e0e7-a9a7-4175-834a-f5a641f47cfc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/bootJarMainClassName" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pro/baebooreung/chat/ChatApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pro/baebooreung/chat/config/EmbeddedRedisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pro/baebooreung/chat/config/RedisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pro/baebooreung/chat/config/SwaggerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pro/baebooreung/chat/config/WebSockConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pro/baebooreung/chat/controller/ChatController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pro/baebooreung/chat/controller/ChatRoomController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pro/baebooreung/chat/dto/ChatMessage$MessageType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pro/baebooreung/chat/dto/ChatMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pro/baebooreung/chat/dto/ChatRoom.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pro/baebooreung/chat/repository/ChatRoomRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pro/baebooreung/chat/service/RedisPublisher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/pro/baebooreung/chat/service/RedisSubcriber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/pro/baebooreung/chat/ChatApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/app.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.pro.baebooreung.chat.ChatApplicationTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.pro.baebooreung.chat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/keystore.p12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.pro.baebooreung.chat.ChatApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/baebooreung/chat/ChatApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/baebooreung/chat/config/EmbeddedRedisConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/baebooreung/chat/config/RedisConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/baebooreung/chat/config/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/baebooreung/chat/config/WebSockConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/baebooreung/chat/controller/ChatController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/baebooreung/chat/controller/ChatRoomController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/baebooreung/chat/dto/ChatMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/baebooreung/chat/dto/ChatRoom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/baebooreung/chat/repository/ChatRoomRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/baebooreung/chat/service/RedisPublisher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pro/baebooreung/chat/service/RedisSubcriber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/keystore.p12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pro/baebooreung/chat/ChatApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/S07P31C207.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigatewayservice/build/classes/java/main/com/pro/baebooreung/apigatewayservice/client/UserServiceClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigatewayservice/src/main/java/com/pro/baebooreung/apigatewayservice/client/UserServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/client/GpsServiceClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/client/UserServiceClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/controller/NavigationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Navigation$NavigationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Navigation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Region.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/repository/NavigationRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/repository/OrderRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/CheckInDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/CheckResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/CheckinResponseDto$CheckinResponseDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/CheckinResponseDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/DeliveryDto$DeliveryDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/DeliveryDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/DriverRouteAndDeliveryDto$DriverRouteAndDeliveryDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/DriverRouteAndDeliveryDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/EndWorkDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/NavigationDto$NavigationDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/NavigationDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/NavigationRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/OrderCntResponseDto$OrderCntResponseDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/OrderCntResponseDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/ResponseDriverRoute.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/RouteAndNaviByRouteNameRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/RouteAndNaviByRouteTypeRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/RouteAndNaviRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/RouteByRegionAndDateDto$RouteByRegionAndDateDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/RouteByRegionAndDateDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/dto/RouteDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/service/DeliveryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/service/DeliveryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/service/NavigationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/service/NavigationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/service/OrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/service/OrderServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/service/RouteServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/vo/RequestCheckBusiness.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/vo/RequestCheckIn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/vo/RequestStart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/vo/ResponseGps.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/test/com/pro/baebooreung/businessservice/BusinessControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/test/com/pro/baebooreung/businessservice/BusinessserviceApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/classes/java/test/com/pro/baebooreung/businessservice/RouteRepoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/reports/tests/test/classes/com.pro.baebooreung.businessservice.BusinessControllerTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/test-results/test/TEST-com.pro.baebooreung.businessservice.BusinessControllerTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/client/GpsServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/client/UserServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/controller/NavigationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/Navigation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/Region.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/repository/NavigationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/CheckInDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/CheckResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/CheckinResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/DeliveryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/DeliveryGPSDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/DriverRouteAndDeliveryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/EndWorkDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/NavigationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/NavigationRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/OrderCntResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/ResponseDriverRoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/RouteAndNaviByRouteNameRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/RouteAndNaviByRouteTypeRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/RouteAndNaviRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/RouteByRegionAndDateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/dto/RouteDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/service/DeliveryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/service/DeliveryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/service/NavigationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/service/NavigationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/service/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/vo/RequestCheckBusiness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/vo/RequestStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/vo/ResponseGps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/test/java/com/pro/baebooreung/businessservice/BusinessControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/businessservice/src/test/java/com/pro/baebooreung/businessservice/RouteRepoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/client/BusinessServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/client/UserServiceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/config/FCMInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/controller/FCMController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/domain/Delivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/domain/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/domain/WorkStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/domain/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/dto/DeliveryGPSDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/dto/FCMDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/dto/FCMMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/dto/FCMTokenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/dto/GpsSaveDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/service/CheckinService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/service/FCMService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/main/resources/baebooreung-398a1-firebase-adminsdk-f7l3r-ef613b3b15.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkinservice/src/test/java/com/pro/baebooreung/checkinservice/CheckinserviceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumerservice/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/.gradle/6.8/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/.gradle/6.8/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/.gradle/configuration-cache/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/src/main/java/com/pro/baebooreung/gpsservice/controller/GpsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/src/main/java/com/pro/baebooreung/gpsservice/domain/Gps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/src/main/java/com/pro/baebooreung/gpsservice/domain/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/src/main/java/com/pro/baebooreung/gpsservice/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/src/main/java/com/pro/baebooreung/gpsservice/domain/WorkStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/src/main/java/com/pro/baebooreung/gpsservice/domain/repository/GpsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/src/main/java/com/pro/baebooreung/gpsservice/domain/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/src/main/java/com/pro/baebooreung/gpsservice/dto/GpsResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/src/main/java/com/pro/baebooreung/gpsservice/service/GpsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpsservice/src/test/java/com/pro/baebooreung/gpsservice/GpsserviceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/6.8/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/6.8/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/7.5.1/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/7.5.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/7.5.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/7.5.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/configuration-cache/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/domain/UserEntity$UserEntityBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/dto/CheckinDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/dto/StartDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/config/FCMInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/controller/FCMController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/dto/CheckinDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/dto/FCMDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/dto/FcmMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/dto/FcmTokenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/dto/ProfileResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/dto/ResponseDriverRoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/dto/StartDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/dto/UserJoinDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/service/FCMService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/apigatewayservice/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/bootJarMainClassName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/classes/java/main/com/pro/baebooreung/apigatewayservice/ApigatewayserviceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/apigatewayservice/build/classes/java/main/com/pro/baebooreung/apigatewayservice/ApigatewayserviceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/classes/java/main/com/pro/baebooreung/apigatewayservice/config/FilterConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/classes/java/main/com/pro/baebooreung/apigatewayservice/filter/AuthorizationHeaderFilter$Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/apigatewayservice/build/classes/java/main/com/pro/baebooreung/apigatewayservice/filter/AuthorizationHeaderFilter$Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/classes/java/main/com/pro/baebooreung/apigatewayservice/filter/AuthorizationHeaderFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/apigatewayservice/build/classes/java/main/com/pro/baebooreung/apigatewayservice/filter/AuthorizationHeaderFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/classes/java/main/com/pro/baebooreung/apigatewayservice/filter/CustomFilter$Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/classes/java/main/com/pro/baebooreung/apigatewayservice/filter/CustomFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/classes/java/main/com/pro/baebooreung/apigatewayservice/filter/GlobalFilter$Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/classes/java/main/com/pro/baebooreung/apigatewayservice/filter/GlobalFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/classes/java/main/com/pro/baebooreung/apigatewayservice/filter/LoggingFilter$Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/classes/java/main/com/pro/baebooreung/apigatewayservice/filter/LoggingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/libs/apigatewayService.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/apigatewayservice/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/resources/main/keystore.p12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/apigatewayservice/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/checkinservice/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/checkinservice/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/checkinservice/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/checkinservice/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/src/main/java/com/pro/baebooreung/apigatewayservice/ApigatewayserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/apigatewayservice/src/main/java/com/pro/baebooreung/apigatewayservice/ApigatewayserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/src/main/java/com/pro/baebooreung/apigatewayservice/config/FilterConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/src/main/java/com/pro/baebooreung/apigatewayservice/filter/AuthorizationHeaderFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/apigatewayservice/src/main/java/com/pro/baebooreung/apigatewayservice/filter/AuthorizationHeaderFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/src/main/java/com/pro/baebooreung/apigatewayservice/filter/CustomFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/src/main/java/com/pro/baebooreung/apigatewayservice/filter/GlobalFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/src/main/java/com/pro/baebooreung/apigatewayservice/filter/LoggingFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/apigatewayservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/src/main/resources/keystore.p12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigatewayservice/src/test/java/com/pro/baebooreung/apigatewayservice/ApigatewayserviceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/checkinservice/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/bootJarMainClassName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/BusinessserviceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/BusinessserviceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/controller/BusinessController.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/controller/BusinessController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Delivery$DeliveryBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Delivery$DeliveryBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Delivery.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Delivery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Order$OrderBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Order$OrderBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/OrderMenu$OrderMenuBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/OrderMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Restaurant$RestaurantBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Restaurant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Route$RouteBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Route$RouteBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Route.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Route.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/RouteType.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/RouteType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/repository/DeliveryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/repository/DeliveryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/repository/RouteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/domain/repository/RouteRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/service/RouteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/service/RouteService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/vo/ResponseDelivery.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/vo/ResponseDelivery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/vo/ResponseRoute$ResponseRouteBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/vo/ResponseRoute$ResponseRouteBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/vo/ResponseRoute.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/vo/ResponseRoute.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/libs/businessService.jar" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/libs/businessService.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gpsservice/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gpsservice/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gpsservice/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gpsservice/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/BusinessserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gpsservice/src/main/java/com/pro/baebooreung/gpsservice/GpsserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/controller/BusinessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/controller/BusinessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/Delivery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/OrderMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/Restaurant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/RouteType.java" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/RouteType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/Type.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/repository/DeliveryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/repository/DeliveryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/repository/RouteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/domain/repository/RouteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/service/RouteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/service/RouteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/service/RouteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/service/RouteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/vo/RequestCheckIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/vo/RequestCheckIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/vo/ResponseDelivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/vo/ResponseDelivery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/vo/ResponseRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/vo/ResponseRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/businessservice/src/test/java/com/pro/baebooreung/businessservice/BusinessserviceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/bootJarMainClassName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/classes/java/main/com/pro/baebooreung/chat/config/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/classes/java/main/com/pro/baebooreung/chat/config/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/classes/java/main/com/pro/baebooreung/chat/dto/ChatMessage$ChatMessageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/classes/java/main/com/pro/baebooreung/chat/dto/ChatMessage$MessageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/classes/java/main/com/pro/baebooreung/chat/dto/ChatMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/classes/java/main/com/pro/baebooreung/chat/dto/ChatRoom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/classes/java/test/com/pro/baebooreung/chat/ChatApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/reports/tests/test/classes/com.pro.baebooreung.chat.ChatApplicationTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/reports/tests/test/packages/com.pro.baebooreung.chat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/resources/main/keystore.p12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/test-results/test/TEST-com.pro.baebooreung.chat.ChatApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/src/main/java/com/pro/baebooreung/chat/config/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/src/main/java/com/pro/baebooreung/chat/dto/ChatRoom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/src/main/resources/keystore.p12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatservice/src/test/java/com/pro/baebooreung/chat/ChatApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/checkinservice/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/src/main/java/com/pro/baebooreung/consumerservice/ConsumerserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/CheckinserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/src/main/java/com/pro/baebooreung/consumerservice/config/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/src/main/java/com/pro/baebooreung/consumerservice/controller/KafkaConsumerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/src/main/java/com/pro/baebooreung/consumerservice/domain/Gps.java" beforeDir="false" afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/domain/Gps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/src/main/java/com/pro/baebooreung/consumerservice/domain/Grade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/src/main/java/com/pro/baebooreung/consumerservice/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/src/main/java/com/pro/baebooreung/consumerservice/domain/WorkStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/src/main/java/com/pro/baebooreung/consumerservice/domain/repository/GpsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/src/main/java/com/pro/baebooreung/consumerservice/domain/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/checkinservice/src/main/java/com/pro/baebooreung/checkinservice/domain/repository/DeliveryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/src/main/java/com/pro/baebooreung/consumerservice/dto/GpsSaveDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/src/main/java/com/pro/baebooreung/consumerservice/service/KafkaConsumerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerservice/src/test/java/com/pro/baebooreung/consumerservice/ConsumerserviceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/build/bootJarMainClassName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/build/classes/java/main/com/pro/baebooreung/discoveryservice/DiscoveryserviceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/src/main/java/com/pro/baebooreung/discoveryservice/DiscoveryserviceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discoveryservice/src/test/java/com/pro/baebooreung/discoveryservice/DiscoveryserviceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gpsservice/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/src/main/java/com/pro/baebooreung/producerservice/ProducerserviceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/src/main/java/com/pro/baebooreung/producerservice/config/KafkaProducerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/src/main/java/com/pro/baebooreung/producerservice/controller/GpsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/src/main/java/com/pro/baebooreung/producerservice/domain/repository/GpsRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/src/main/java/com/pro/baebooreung/producerservice/dto/GpsSaveDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/src/main/java/com/pro/baebooreung/producerservice/service/GpsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/producerservice/src/test/java/com/pro/baebooreung/producerservice/ProducerserviceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speechtotextservice/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speechtotextservice/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speechtotextservice/.idea/speechtotextservice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speechtotextservice/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speechtotextservice/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speechtotextservice/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speechtotextservice/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speechtotextservice/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/bootJarMainClassName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/UserserviceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/client/BusinessServiceClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/client/BusinessServiceClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/domain/Grade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/domain/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/domain/UserEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/domain/WorkStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/domain/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/dto/UserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/security/AuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/security/AuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/security/WebSecurity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/vo/Greeting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/vo/RequestLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/vo/RequestNaverMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/vo/RequestUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/vo/ResponseRoute.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/main/com/pro/baebooreung/userservice/vo/ResponseUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/classes/java/main/com/pro/baebooreung/businessservice/vo/ResponseUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/test/com/pro/baebooreung/userservice/UserserviceApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/test/com/pro/baebooreung/userservice/controller/UserControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/classes/java/test/com/pro/baebooreung/userservice/service/UserServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/libs/userService.jar" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/build/libs/userService.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/reports/tests/test/classes/com.pro.baebooreung.userservice.UserserviceApplicationTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/reports/tests/test/packages/com.pro.baebooreung.userservice.html" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/build/reports/tests/test/packages/com.pro.baebooreung.businessservice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/test-results/test/TEST-com.pro.baebooreung.userservice.UserserviceApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/UserserviceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/client/BusinessServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/client/BusinessServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/domain/Grade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/domain/UserEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/domain/WorkStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/domain/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/domain/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/security/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/security/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/security/WebSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/security/WebSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/vo/Greeting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/vo/RequestLogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/vo/RequestNaverMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/vo/RequestUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/vo/ResponseRoute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/pro/baebooreung/userservice/vo/ResponseUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/businessservice/src/main/java/com/pro/baebooreung/businessservice/vo/ResponseUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/test/java/com/pro/baebooreung/userservice/UserserviceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/test/java/com/pro/baebooreung/userservice/controller/UserControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/test/java/com/pro/baebooreung/userservice/service/UserServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/.buckconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/.bundle/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/.flowconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/.node-version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/.prettierrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/.ruby-version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/.watchmanconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/__tests__/App-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/_BUCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/build_defs.bzl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/debug.keystore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/debug/java/com/app/ReactNativeFlipper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/java/com/app/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/main/java/com/app/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/java/com/app/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/main/java/com/app/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/java/com/app/newarchitecture/MainApplicationReactNativeHost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/java/com/app/newarchitecture/components/MainComponentsRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/java/com/app/newarchitecture/modules/MainApplicationTurboModuleManagerDelegate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/jni/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/jni/MainApplicationModuleProvider.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/jni/MainApplicationModuleProvider.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/jni/MainApplicationTurboModuleManagerDelegate.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/jni/MainApplicationTurboModuleManagerDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/jni/MainComponentsRegistry.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/jni/MainComponentsRegistry.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/jni/OnLoad.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/drawable/rn_edit_text_material.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/ios/.xcode.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/ios/Podfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/ios/app.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/ios/app.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/ios/app.xcodeproj/xcshareddata/xcschemes/app.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/ios/app/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/ios/app/AppDelegate.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/ios/app/Images.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/ios/app/Images.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/ios/app/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/ios/app/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/ios/app/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/ios/app/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/ios/appTests/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/ios/appTests/appTests.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/metro.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/src/components/ManagerChat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/src/components/ManagerChat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/src/components/MangaerHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/src/components/MangaerHome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/app/src/pages/managerApp/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app/src/pages/managerApp/HomeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/build/logo.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/build/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/build/static/js/main.28d6c941.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/build/static/js/main.28d6c941.js.LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/build/static/media/chat.7425923556a70039e052.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/build/static/media/fold_off.93e3472eaf96fe485a25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/build/static/media/fold_on.f303a425a51001baf5d4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/build/static/media/logout_white.821e6f5bddd8427e6395.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/build/static/media/map.73948584a92a3fc87a6f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/build/static/media/new_logo_2.d1752d4bfb683d032310.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/build/static/media/profile.4c1db188c1ed79a85c7b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/public/logo.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/api/direction5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/dashboard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/fold_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/fold_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/logo_long.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/logo_long_v2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/logo_short_.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/logo_short_stroke.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/logo_word_only.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/logout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/logout_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/new_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/new_logo_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/notice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/sub/bandicam_2022-11-03_17-35-17-790-removebg-preview (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/sub/bandicam_2022-11-03_17-35-17-790-removebg-preview (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/sub/bandicam_2022-11-03_17-35-17-790-removebg-preview (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/sub/new_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/images/배달긱.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/styles/font.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/styles/font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/styles/maincolor.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/src/assets/styles/maincolor.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/index.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/loginpage/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/src/loginpage/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/loginpage/login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/src/loginpage/login.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/mainpagesub/MainFrame.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/src/mainpagesub/MainFrame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/mainpagesub/MainFrame.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/src/mainpagesub/MainFrame.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/mainpagesub/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/src/mainpagesub/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/mainpagesub/MainPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/src/mainpagesub/MainPage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/navermap/NaverMapApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/src/navermap/NaverMapApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/navermap/NaverMapApi.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/src/navermap/NaverMapApi.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/other/Page404.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/src/other/Page404.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/baebooreung/src/other/testpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/baebooreung/src/other/testpage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,13 +625,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/multicampus/Desktop/baebooreung/backend"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/multicampus/Desktop/baebooreung/backend&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.chat [bootJar]">
     <configuration name="ChatApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pro.baebooreung.chat.ChatApplication" />
@@ -199,8 +705,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666234921185</updated>
+      <workItem from="1669602967072" duration="298000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -212,5 +722,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
