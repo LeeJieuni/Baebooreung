@@ -1,10 +1,11 @@
 package com.pro.baebooreung.userservice.domain;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Data
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
 @Table(name="user")
 public class UserEntity {
@@ -29,8 +30,6 @@ public class UserEntity {
 
     private String profile;
 
-
-
     private String phone;
 
     private Integer region;
@@ -43,4 +42,64 @@ public class UserEntity {
 
     @Column(name = "delivery_id",nullable = true)
     private Integer deliveryId;
+
+    @Column(name = "fcm_token",nullable = true)
+    private String fcmToken;
+
+    public void updateFcmToken(String fcmToken) {
+        this.fcmToken = fcmToken;
+    }
+
+    public void updateGrade(Grade grade) {
+        this.grade = grade;
+    }
+
+    public void updateStartEnd(int routeId,int deliveryId,WorkStatus workStatus){
+        this.routeId = routeId;
+        this.deliveryId = deliveryId;
+        this.workStatus = workStatus;
+    }
+
+    public void updateDelivery(int deliveryId){
+        this.deliveryId = deliveryId;
+    }
+
+    public void updateProfile(String profileUrl) {
+        this.profile = profileUrl;
+    }
+
+
+    @Builder
+    public UserEntity(int id, String email, String name, String specialKey, Grade grade, String encryptedPwd, String profile, String phone, Integer region, WorkStatus workStatus, Integer routeId, Integer deliveryId) {
+        this.id = id;
+        this.email = email;
+        this.name = name;
+        this.specialKey = specialKey;
+        this.grade = grade;
+        this.encryptedPwd = encryptedPwd;
+        this.profile = profile;
+        this.phone = phone;
+        this.region = region;
+        this.workStatus = workStatus;
+        this.routeId = routeId;
+        this.deliveryId = deliveryId;
+    }
+
+    @Override
+    public String toString() {
+        return "UserEntity{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", name='" + name + '\'' +
+                ", specialKey='" + specialKey + '\'' +
+                ", grade=" + grade +
+                ", encryptedPwd='" + encryptedPwd + '\'' +
+                ", profile='" + profile + '\'' +
+                ", phone='" + phone + '\'' +
+                ", region=" + region +
+                ", workStatus=" + workStatus +
+                ", routeId=" + routeId +
+                ", deliveryId=" + deliveryId +
+                '}';
+    }
 }
